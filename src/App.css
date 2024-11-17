@@ -1,0 +1,195 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+body{
+  background-attachment: fixed;
+  background-image: url('assets/todo_bg.jpg');
+  background-size: cover;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.todo_conntainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5em;
+  max-width: 40%;
+  margin: auto;
+}
+.todo_conntainer h2{
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+  color: white;
+}
+.todo_input_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.todo_input_container input{
+  padding: 13px 20px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-right: 1em;
+  background: #f9f9f9db;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-right: 0px;
+  font-size: 15px;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+  width: 100%;
+}
+
+.todo_input_container input::placeholder{
+  color: #000000;
+  font-weight: 500;
+}
+
+.todo_input_container button{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  font-family: initial;
+  outline: none;
+  padding: 0px;
+  background: transparent;
+  border-radius:30px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.todo_input_container button i {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+
+.todo_list_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px;
+}
+
+.todo_list_container li{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 6px 20px;
+  margin-bottom: 1em;
+  background: linear-gradient(45deg, #2d2d2d, #e1e1e1);
+  border-radius: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.todo_list_container li .todo_single_input,
+.todo_list_container li .todo_single_input:focus-visible{
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  color: rgb(218, 218, 218);
+  border:1px solid rgb(255 255 255 / 29%);
+  outline: none;
+  padding: 7px 20px;
+  margin: 0px 10px;
+  border-radius: 30px;
+  transition: all 0.3s;
+
+}
+
+.todo_list_container li .todo_completed{
+  text-decoration: line-through;
+  color: #ffffff;
+}
+
+.todo_list_container li .todo_single_input:disabled{
+  border: 1px solid transparent !important;
+
+}
+
+.todo_completed_list{
+  background: linear-gradient(45deg, #029c19, #9bff88) !important;
+  transition: all 0.3s;
+}
+
+.todo_editble, .todo_editble:focus-visible, .todo_editble:focus{
+  transition: all 0.3s;
+  padding: 0px;
+  background: transparent;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+}
+
+.todo_editble i.bi-pencil-fill{
+  font-size: 15px;
+  color: #009915;
+}
+
+.todo_delete, .todo_delete:focus-visible, .todo_delete:focus{
+  transition: all 0.3s;
+  padding: 0px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.todo_delete i{
+  font-size: 15px;
+  color: #d00606;
+} 
