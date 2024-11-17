@@ -178,7 +178,6 @@ body{
 
 .todo_editble i.bi-pencil-fill{
   font-size: 15px;
-  color: #009915;
 }
 
 .todo_delete, .todo_delete:focus-visible, .todo_delete:focus{
@@ -191,5 +190,4 @@ body{
 
 .todo_delete i{
   font-size: 15px;
-  color: #d00606;
 } 
